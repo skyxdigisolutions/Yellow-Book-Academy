@@ -275,6 +275,10 @@
         height: 100%;
         object-fit: cover;
     }
+     .header-carousel .owl-nav .owl-prev,
+.header-carousel .owl-nav .owl-next {
+   visibility: hidden;
+}
 }
 
 .header-carousel .owl-nav {
