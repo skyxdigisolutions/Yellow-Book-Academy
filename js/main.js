@@ -135,6 +135,10 @@ function whatsapp() {
     var checkedRadio = Array.from(radioButtonGroup).find(
        (radio) => radio.checked
     );
+    var radioButtonJointype = document.getElementsByName("jointype");
+    var checkedRadio1 = Array.from(radioButtonJointype).find(
+       (radio) => radio.checked
+    );
     var message = document.getElementById("message").value;
     // console.log(class_type1);
     var whatsappurl = "https://wa.me/919663188995?text="
@@ -143,6 +147,7 @@ function whatsapp() {
     +"Email Id: "+email+"%0a"
     +"Course: "+course+"%0a"
     +"Class Type: "+checkedRadio.value+"%0a"
+    +"Join As A: "+checkedRadio1.value+"%0a"
     +"Message: "+message+"%0a";
     window.open(whatsappurl,"_blank").focus();
 
