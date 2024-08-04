@@ -547,3 +547,25 @@
     padding-right: 0;
     border-right: none;
 }
+.course_selection{
+    border:solid 0.2px;
+    text-align: left;
+    border-color: #c4c4c9;
+    padding: 10px;
+}
+.course_selection select{
+    border: none;
+    outline: none;
+}
+.class_type{
+    border:solid 0.2px;
+    text-align: left;
+    border-color: #c4c4c9;
+    padding: 10px;
+}
+.join_type{
+    border:solid 0.2px;
+    text-align: left;
+    border-color: #c4c4c9;
+    padding: 10px;
+}
