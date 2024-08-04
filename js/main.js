@@ -130,7 +130,8 @@ function whatsapp() {
     var stuname = document.getElementById("name").value;
     var mobile = document.getElementById("mobile").value;
     var email = document.getElementById("email").value;
-    var course = document.getElementById("course").value;
+    // var course = document.getElementById("course").value;
+    var course = document.getElementById('dropdown1').value;
     var radioButtonGroup = document.getElementsByName("classtype");
     var checkedRadio = Array.from(radioButtonGroup).find(
        (radio) => radio.checked
@@ -141,14 +142,14 @@ function whatsapp() {
     );
     var message = document.getElementById("message").value;
     // console.log(class_type1);
-    var whatsappurl = "https://wa.me/919663188995?text="
-    +"Student Name: "+stuname+"%0a"
-    +"Number: "+mobile+"%0a"
-    +"Email Id: "+email+"%0a"
-    +"Course: "+course+"%0a"
-    +"Class Type: "+checkedRadio.value+"%0a"
-    +"Join As A: "+checkedRadio1.value+"%0a"
-    +"Message: "+message+"%0a";
+    var whatsappurl = "https://wa.me/919620405406?text="
+    +"Student Name: "+encodeURIComponent(stuname)+"%0a"
+    +"Number: "+encodeURIComponent(mobile)+"%0a"
+    +"Email Id: "+encodeURIComponent(email)+"%0a"
+    +"Course: "+encodeURIComponent(course)+"%0a"
+    +"Class Type: "+(checkedRadio ? encodeURIComponent(checkedRadio.value) : '')+"%0a"
+    +"Join As A: "+(checkedRadio ? encodeURIComponent(checkedRadio1.value) : '')+"%0a"
+    +"Message: "+encodeURIComponent(message)+"%0a";
     window.open(whatsappurl,"_blank").focus();
 
 }
