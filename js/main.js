@@ -132,8 +132,8 @@ function whatsapp() {
     var email = document.getElementById("email").value;
     // var course = document.getElementById("course").value;
     var course = document.getElementById('dropdown1').value;
-    var classtype = document.getElementById('dropdown1').value;
-    var jointype = document.getElementById('dropdown1').value;
+    var classtype = document.getElementById('dropdown2').value;
+    var jointype = document.getElementById('dropdown3').value;
     // var radioButtonGroup = document.getElementsByName("classtype");
     // var checkedRadio = Array.from(radioButtonGroup).find(
     //    (radio) => radio.checked
