@@ -148,9 +148,9 @@ function whatsapp() {
     var whatsappUrl;
 
             if (isMobile()) {
-                whatsappUrl = "https://api.whatsapp.com/send?phone=919663188995&text=" + whatsappMessage;
+                whatsappUrl = "https://api.whatsapp.com/send?phone=919620405406&text=" + whatsappMessage;
             } else {
-                whatsappUrl = "https://web.whatsapp.com/send?phone=919663188995&text=" + whatsappMessage;
+                whatsappUrl = "https://web.whatsapp.com/send?phone=919620405406&text=" + whatsappMessage;
             }
 
             window.open(whatsappUrl, '_blank');
