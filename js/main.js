@@ -138,7 +138,13 @@ function whatsapp() {
     var classtype = document.getElementById('dropdown2').value;
     var jointype = document.getElementById('dropdown3').value;
     var message = document.getElementById("message").value;
-     var whatsappMessage ="Student Name: "+stuname+"%0aNumber: "+mobile+"%0aEmail Id: "+email+"%0aCourse: "+course+"%0aClass Type: "+classtype+"%0aJoin AS A: "+jointype+"%0aMessage: "+message;
+     var whatsappMessage ="Student Name: "+stuname
+                          +"Number: "+mobile
+                          +"Email Id: "+email
+                          +"Course: "+course
+                          +"Class Type: "+classtype
+                          +"Join AS A: "+jointype
+                          +"Message: "+message;
     var whatsappUrl;
 
             if (isMobile()) {
