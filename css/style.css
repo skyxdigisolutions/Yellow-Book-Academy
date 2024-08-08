@@ -563,9 +563,17 @@
     border-color: #c4c4c9;
     padding: 10px;
 }
+.class_type select{
+    border: none;
+    outline: none;
+}
 .join_type{
     border:solid 0.2px;
     text-align: left;
     border-color: #c4c4c9;
     padding: 10px;
+}
+.join_type select{
+    border: none;
+    outline: none;
 }
