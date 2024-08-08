@@ -126,35 +126,35 @@
     
 })(jQuery);
 
+ function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+
 function whatsapp() {
     var stuname = document.getElementById("name").value;
     var mobile = document.getElementById("mobile").value;
     var email = document.getElementById("email").value;
-    // var course = document.getElementById("course").value;
     var course = document.getElementById('dropdown1').value;
     var classtype = document.getElementById('dropdown2').value;
     var jointype = document.getElementById('dropdown3').value;
-    // var radioButtonGroup = document.getElementsByName("classtype");
-    // var checkedRadio = Array.from(radioButtonGroup).find(
-    //    (radio) => radio.checked
-    // );
-    // var radioButtonJointype = document.getElementsByName("jointype");
-    // var checkedRadio1 = Array.from(radioButtonJointype).find(
-    //    (radio) => radio.checked
-    // );
     var message = document.getElementById("message").value;
-    // console.log(class_type1);
-    var whatsappurl = "https://web.whatsapp.com/send?phone=919620405406&text="
-    +"Student Name: "+stuname+"%0a"
+     var whatsappMessage ="Student Name: "+stuname+"%0a"
     +"Number: "+mobile+"%0a"
     +"Email Id: "+email+"%0a"
     +"Course: "+course+"%0a"
     +"Class Type: "+classtype+"%0a"
     +"Join AS A: "+jointype+"%0a"
-
-    // +"Class Type: "+(checkedRadio ? encodeURIComponent(checkedRadio.value) : '')+"%0a"
-    // +"Join As A: "+(checkedRadio ? encodeURIComponent(checkedRadio1.value) : '')+"%0a"
     +"Message: "+message+"%0a";
-    window.open(whatsappurl,"_blank").focus();
+    var whatsappUrl;
+
+            if (isMobile()) {
+                whatsappUrl = "https://api.whatsapp.com/send?phone=919663188995&text=" + encodeURIComponent(whatsappMessage);
+            } else {
+                whatsappUrl = "https://web.whatsapp.com/send?phone=919663188995&text=" + encodeURIComponent(whatsappMessage);
+            }
+
+            window.open(whatsappUrl, '_blank');
+   
+    // window.open(whatsappurl,"_blank").focus();
 
 }
