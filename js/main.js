@@ -144,7 +144,7 @@ function whatsapp() {
     // );
     var message = document.getElementById("message").value;
     // console.log(class_type1);
-    var whatsappurl = "https://web.whatsapp.com/send?phone=919663188995&text="
+    var whatsappurl = "https://web.whatsapp.com/send?phone=919620405406&text="
     +"Student Name: "+stuname+"%0a"
     +"Number: "+mobile+"%0a"
     +"Email Id: "+email+"%0a"
